@@ -1,0 +1,16 @@
+= form_with(model:[@course, @post, comment]) do |form|
+  .modal-dialog
+    .modal-content
+      .modal-header.text-center
+        %h4.modal-title.w-100.font-weight-bold #{action_name.capitalize} Comment
+      #c_form-h.m-3
+        .row
+          .col-sm.fw-bold
+            Descrtiption
+        %br/
+        .row
+          .col-sm
+            = form.text_area :body, class:"form-control", rows:"5", placeholder:"Enter your comment description..."
+            = form.hidden_field :parent_id, value: params[:parent_id]
+      .modal-footer.d-flex.justify-content-center
+        = submit_tag "Submit", class:"btn btn-default modal-title w-100 font-weight-bold"

@@ -1,0 +1,11 @@
+- if flash[:message]
+  - if flash[:success] == 'true'
+    #alert_bar.alert.alert-success{:role => "alert"}
+      = render 'layouts/notice_elements'
+  - elsif flash[:success] == 'false'
+    #alert_bar.alert.alert-danger{:role => "alert"}
+      = render 'layouts/notice_elements'
+  - else
+    #alert_bar.alert.alert-warning{:role => "alert"}
+      = render 'layouts/notice_elements'
+  = javascript_include_tag :delete_element

@@ -1,0 +1,32 @@
+🏛️ 150 students enrolled
+%br/
+🟢 10 students online
+%br/
+%hr/
+🧑‍🤝‍🧑 5 in your group
+%br/
+🟢 2 online (including you)
+%hr/
+.nav
+  .col
+    .d-flex.float-start
+      %h3 All Topics
+  .col 
+    .d-flex.float-end
+      - if defined? course_id
+        %button.btn.btn-primary.fs-6.fw-bold{"data-bs-target" => "#ajax_popup", "data-bs-toggle" => "modal", :id => "", :onclick => "ajax_get_page('GET', '#{new_course_post_path(:course_id => course_id ,:yeild_only => true)}', 'ajax_content')"} New Topic
+      - else
+        %button.btn.btn-primary.fs-6.fw-bold{"data-bs-target" => "#ajax_popup", "data-bs-toggle" => "modal", :id => "", :onclick => "ajax_get_page('GET', '#{new_course_post_path(:yeild_only => true)}', 'ajax_content')"} New Topic
+.h6 📖 0/2 projects complete
+%br/
+- @posts.each do |post|
+  = render post
+  %br/
+
+%hr/
+.nav
+  .col
+    .d-flex.float-start
+      %h3 Group Assignments
+%br/
+.h6 No assignments yet

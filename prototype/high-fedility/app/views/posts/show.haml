@@ -1,0 +1,24 @@
+#{link_to "< Back to course page", course_path(@post.course), method: :get, :class => "text-decoration-none fs-6"}
+%br/
+%br/
+= render @post
+%br/
+.container
+  .h3
+    Voice Channel
+  🔈🎤 Adrian Low
+  %br/
+  🔇❌ Alan Turing
+  %br/
+  🔈🎤
+  = current_user.full_name_to_s
+
+.py-5
+  .container
+    .row
+      .col-md-10
+        %iframe{:height => "500px", :src => "https://www.online-python.com/online_python_compiler", :width => "1000px"}
+
+%br/
+- if controller_name == 'posts' and action_name == 'show'
+  = render :template => 'comments/index', :locals => {:course_id => @post.course.id, :post_id => @post.id}

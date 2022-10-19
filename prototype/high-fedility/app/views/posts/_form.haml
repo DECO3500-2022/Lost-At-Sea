@@ -1,0 +1,20 @@
+= form_with(model: [@course, post]) do |form|
+  .modal-dialog
+    .modal-content
+      .modal-header.text-center
+        %h4.modal-title.w-100.font-weight-bold #{action_name.capitalize} Post
+      #c_form-h.m-3
+        .form-group.row
+          %label.col-2.col-form-label.fw-bold Title
+          .col-10
+            = form.text_field :title, class:"form-control", placeholder:"Post Title"
+        %hr/
+        .row
+          .col-sm.fw-bold
+            Descrtiption
+        %br/
+        .row
+          .col-sm
+            = form.text_area :body, class:"form-control", rows:"15", placeholder:"Enter your post description..."
+      .modal-footer.d-flex.justify-content-center
+        = submit_tag "Submit", class:"btn btn-default modal-title w-100 font-weight-bold"

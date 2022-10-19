@@ -1,0 +1,16 @@
+.fw-bold
+  = comment.user.full_name_to_s
+.fw-light
+  = comment.awards_to_s
+%div
+  = comment.body
+.nav
+  .col
+    .d-flex.float-start
+      %button.btn.btn-link.btn-sm.text-decoration-none{"data-bs-target" => "#ajax_popup", "data-bs-toggle" => "modal", :id => "", :onclick => "ajax_get_page('GET', '#{new_course_post_comment_path(@course, @post, :parent_id => comment, :yeild_only => true)}', 'ajax_content')"} Reply
+      - if comment.user != current_user
+        #{button_to comment.award_bool_to_s(current_user), course_post_comment_award_path(@course, @post, comment), method: :put, :class => "btn btn-link btn-sm text-decoration-none"}
+      - if comment.user == current_user
+        %button.form.btn.btn-link.btn-sm.text-decoration-none{"data-bs-target" => "#ajax_popup", "data-bs-toggle" => "modal", :onclick => "ajax_get_page('GET', '#{edit_course_post_comment_path(@course, @post, comment, :yeild_only => true)}', 'ajax_content')"} Edit
+      - if comment.user == current_user or !current_user.student?
+        #{button_to "Delete", [@course, @post, comment], method: :delete, :class => "btn btn-link btn-sm text-decoration-none"}

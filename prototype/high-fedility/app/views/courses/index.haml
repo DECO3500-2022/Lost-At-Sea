@@ -1,0 +1,13 @@
+.nav
+  .col
+    .d-flex.float-start
+      %h3 All Courses
+  .col
+    - if current_user.admin?
+      .d-flex.float-end
+        %button.btn.btn-primary.fs-6.fw-bold{"data-bs-target" => "#ajax_popup", "data-bs-toggle" => "modal", :id => "", :onclick => "ajax_get_page('GET', '#{new_course_path(:yeild_only => true)}', 'ajax_content')"} New Course
+%br/
+.container 
+  .row
+    - @courses.each do |course|
+      = render course

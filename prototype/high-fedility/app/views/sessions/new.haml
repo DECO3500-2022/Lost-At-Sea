@@ -1,0 +1,17 @@
+= form_tag sessions_path do |form|
+  .modal-dialog{:role => "document"}
+    .modal-content{:style => ""}
+      .modal-header.text-center
+        %h4.modal-title.w-100.font-weight-bold Sign in
+      #c_form-h.m-3
+        .form-group.row
+          %label.col-2.col-form-label{:for => "inputmailh"} E-mail
+          .col-10
+            = text_field_tag :email, "", class:"form-control", id:"inputmailh", placeholder:"mail@example.com"
+        %br/
+        .form-group.row
+          %label.col-2.col-form-label{:for => "inputpasswordh"} Password
+          .col-10
+            = password_field_tag :password, "", class:"form-control", id:"inputpasswordh", placeholder:"Password"
+      .modal-footer.d-flex.justify-content-center
+        = submit_tag "Login", class:"btn btn-default modal-title w-100 font-weight-bold"

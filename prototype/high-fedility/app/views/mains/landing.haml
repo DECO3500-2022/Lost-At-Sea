@@ -1,0 +1,40 @@
+.py-5.text-center.align-items-center.d-flex{:style => "background-image: linear-gradient(to left bottom, rgba(189, 195, 199, .75), rgba(44, 62, 80, .75)); background-size: 100%;"}
+  .container.py-5
+    .row
+      .col-md-8.mx-auto
+        %i.d-block.fa.fa-stop-circle.mb-3.text-muted.fa-5x
+        %h1.display-3.mb-4 Chit chat! Get help! Talk with your peers!
+        %p.lead.mb-5{:style => "line-height: 30px"} A place to talk with your teaching staff and peers about the subject and get rewarded for doing so! Also definately a shameless Ed Discussion clone (but with a more socially aware design).
+.py-5
+  .container
+    .row
+      .col-md-10
+        %h1.mb-3 Getting started...
+        %hr/
+        .row
+          .col-md-8.p-3
+            %h3 Step 1
+            %h5{:class => "mb-5\""} Create an account
+          - if current_user
+            .col-md-4.align-items-center.d-flex.justify-content-center.p-3
+              %a.btn.btn-outline-primary.btn-lg.btn-block Already Logged in
+          - else
+            .col-md-4.align-items-center.d-flex.justify-content-center.p-3
+              %button.btn.btn-outline-primary.btn-lg.btn-block{"data-bs-target" => "#ajax_popup", "data-bs-toggle" => "modal", :id => "", :onclick => "ajax_get_page('GET', '#{register_path(:yeild_only => true)}', 'ajax_content')"} Create an account
+          .col-md-8.p-3
+            %h3 Step 2
+            %h5{:class => "mb-5\""} Browse and enroll in courses
+          .col-md-4.align-items-center.d-flex.justify-content-center.p-3
+            #{button_to "Browse Courses", courses_path, method: :get, :class => "btn btn-outline-primary btn-lg btn-block"}
+          .col-md-8.p-3
+            %h3 Step 3
+            %h5{:class => "mb-5\""} View your account to see your awards and enrolled courses
+          .col-md-4.align-items-center.d-flex.justify-content-center.p-3
+            - if current_user
+              #{button_to "View Account", user_path(current_user), method: :get, :class => "btn btn-outline-primary btn-lg btn-block"}
+            - else
+              %button.btn.btn-outline-primary.btn-lg.btn-block{"data-bs-target" => "#ajax_popup", "data-bs-toggle" => "modal", :id => "", :onclick => "ajax_get_page('GET', '#{login_path(:yeild_only => true)}', 'ajax_content')"} Login first
+          .col-md-8.p-3
+            %h3 Step 4
+            %h5{:class => "mb-5\""} Interact! Create posts and comments in your courses. Make them feel good by giving awards
+        %hr/

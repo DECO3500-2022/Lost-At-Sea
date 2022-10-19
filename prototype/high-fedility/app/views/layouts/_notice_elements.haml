@@ -1,0 +1,13 @@
+%nav.navbar.navbar-inverse
+  .container-fluid.fw-bold
+    = flash[:message]
+    %ul.nav.navbar-nav.navbar-right
+      %li
+        %button.btn-close{"aria-label" => "Close", :onclick => "delete_emement_by_id('alert_bar')", :type => "button"}
+  .container-fluid 
+    - if flash[:errors]
+      %ul
+        - flash[:errors].each do |error|
+          %li
+            = error[0].capitalize.gsub("_", " ")
+            = error[1][0]

@@ -1,0 +1,45 @@
+%h3 Your Account
+.card
+  .card-header  
+    .row
+      .col-2.fw-bold
+        First Name
+      .col
+        = user.first_name
+  .card-header  
+    .row
+      .col-2.fw-bold
+        Last Name
+      .col
+        = user.last_name
+  .card-header  
+    .row
+      .col-2.fw-bold
+        Email
+      .col
+        = user.email
+%br/
+%h3 Enrolled Courses
+%ul.list-group
+  - user.enrollment.each do |enrollment|
+    %li.list-group-item
+      = render enrollment.course
+
+%br/
+%h3 Awards
+.card
+  .card-header  
+    .row
+      .col.fw-bold
+        = user.trophies_to_s
+      .col.fw-bold
+        = user.medals_to_s
+%ul.list-group
+  - user.awards.each do |award|
+    %li.list-group-item
+      - if !award.post.nil?
+        #{link_to award.to_s, course_post_path(award.post.course, award.post), method: :get, :class => "text-decoration-none"}
+      - elsif !award.comment.nil?
+        #{link_to award.to_s, course_post_path(award.comment.post.course, award.comment.post), method: :get, :class => "text-decoration-none"}
+      - else
+        = award.to_s

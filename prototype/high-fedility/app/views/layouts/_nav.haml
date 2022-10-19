@@ -1,0 +1,15 @@
+.nav.navbar.navbar-expand-md.navbar-dark.bg-dark.container-fluid
+  .col
+    .d-flex.float-start
+      #{button_to ">_ Co-Code", landing_path, method: :get, :class => "navbar-brand button btn"}
+  .col
+    .d-flex.float-end
+      - if current_user.nil?
+        - unless current_page?(register_path)
+          %button.btn.nav-link.fw-bold{"data-bs-target" => "#ajax_popup", "data-bs-toggle" => "modal", :id => "", :onclick => "ajax_get_page('GET', '#{register_path(:yeild_only => true)}', 'ajax_content')"} Register
+        - unless current_page?(login_path)
+          %button.btn.nav-link.fw-bold{"data-bs-target" => "#ajax_popup", "data-bs-toggle" => "modal", :id => "", :onclick => "ajax_get_page('GET', '#{login_path(:yeild_only => true)}', 'ajax_content')"} Login
+      - else
+        #{button_to "Courses", courses_path, method: :get, :class => "button btn nav-link fw-bold"}
+        #{button_to "Account", user_path(current_user.id), method: :get, :class => "button btn nav-link fw-bold"}
+        #{button_to "Logout", logout_path, method: :delete, :class => "button btn nav-link fw-bold"}

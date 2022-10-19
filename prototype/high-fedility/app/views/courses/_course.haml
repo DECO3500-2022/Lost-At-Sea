@@ -1,0 +1,12 @@
+.card{:style => "width: 20rem;"}
+  .card-body
+    #{button_to course.to_s, course_path(course), method: :get, :class => "btn btn-link btn-sm text-decoration-none fs-5"}
+    #{button_to course.enrollment_bool_to_s(current_user) , course_enroll_path(course), method: :put, :class => "btn btn-link text-decoration-none fw-bold"}
+
+    - if current_user.admin?
+      %form(action="javascript:void(0)") 
+        %button.form.btn.btn-link.text-decoration-none.fw-bold{"data-bs-target" => "#ajax_popup", "data-bs-toggle" => "modal", :onclick => "ajax_get_page('GET', '#{edit_course_path(course, :yeild_only => true)}', 'ajax_content')"} Edit
+        #{button_to "Delete", course, method: :delete, :class => "btn btn-link text-decoration-none fw-bold"}
+- if controller_name == 'courses' and action_name == 'show'
+  %hr/
+  = render :template => 'posts/index', :locals => {:course_id => course.id}

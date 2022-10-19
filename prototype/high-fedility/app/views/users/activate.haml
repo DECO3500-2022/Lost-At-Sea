@@ -1,0 +1,22 @@
+= form_with url: activated_path, method: :put do |form|
+  .modal-dialog
+    .modal-content
+      .modal-header.text-center
+        %h4.modal-title.w-100.font-weight-bold
+          = form.label(:query, "Enter your 6-digit code")
+      #c_form-h.m-3
+        .form-group.row
+          %label.col-2.col-form-label Code
+          .col-10
+            = form.text_field(:code, class:"form-control", placeholder:"The  6-digit code is sent to your email")
+      .modal-footer
+        = form.submit("Activate", class:"btn btn-default modal-title w-100 font-weight-bold")
+
+.modal-dialog
+  .modal-content
+    .nav
+      .col.btn.text-decoration-none
+        Don't see your code?
+      .col
+        #{button_to "Resend Code", regenerate_code_path, method: :put, :class => "btn w-100 text-primary"}
+= current_user.register_code

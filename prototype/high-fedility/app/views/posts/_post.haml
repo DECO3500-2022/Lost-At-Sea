@@ -1,0 +1,24 @@
+
+
+.card
+  .card-header
+    .nav
+      .col
+        .d-flex.float-start
+          #{link_to post.title, course_post_path(@course, post), method: :get, :class => "text-decoration-none fs-4"}
+      .col
+        .d-flex.float-end
+          
+  .card-body
+    = post.body
+  .card-footer.text-muted
+    .nav
+      .col
+        
+      .col
+        .d-flex.float-end
+          - if post.user == current_user
+            %form(action="javascript:void(0)") 
+              %button.form.btn.btn-link.btn-sm.text-decoration-none.fw-bold{"data-bs-target" => "#ajax_popup", "data-bs-toggle" => "modal", :onclick => "ajax_get_page('GET', '#{edit_course_post_path(@course, post, :yeild_only => true)}', 'ajax_content')"} Edit
+          - if post.user == current_user or !current_user.student?
+            #{button_to "Delete", [@course, post], method: :delete, :class => "btn btn-link btn-sm text-decoration-none fw-bold"}
