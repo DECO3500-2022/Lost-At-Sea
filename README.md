@@ -27,6 +27,8 @@ Background Research
 Proposal:
 - https://github.com/DECO3500-2022/Lost-At-Sea/blob/main/Concept%20Proposal.pdf
 
+Meeting Minutes:
+- https://github.com/DECO3500-2022/Lost-At-Sea/tree/main/meetings
 Prototype #1:
 - https://github.com/DECO3500-2022/Lost-At-Sea/tree/main/prototype
 
