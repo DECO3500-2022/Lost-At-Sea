@@ -1,3 +1,5 @@
+# Wiki
+
 ## Conference Poster & Promotional Material:
 
 ### POSTER (Ida add here please)
@@ -54,6 +56,8 @@ DIAGRAM
 
 ### Ferdi Sungkar
 - Design Brochure
+- Solved Issues in Github
+- Powerpoint Presentation
 
 
 
