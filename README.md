@@ -1,21 +1,21 @@
 # Lost-At-Sea
 
-README.md should contain:
-This file will provide a guide to the contents of the repository, providing a hyperlinked
-overview for the project and structure of your documentation. This should also include
-instructions for how to deploy and use your prototype, including any login credentials.
-
 ### Final Prototype URL:
-- 
+- http://128.199.80.224:3000/
 
-### How to use it:
-1. 
-2.
-3.
-4.
-5.
-6.
-7.
+### Final Prototype Source code
+- https://github.com/DECO3500-2022/Lost-At-Sea/tree/main/prototype/high-fedility
+#### Install
+The link below contains a comprehensive guide of installing Ruby on Rails on different OS
+ - https://gorails.com/setup/
+
+ However there is one thing to keep in mind, this project runs on Ruby v3.1.1 and Rails v7.0.2.4. The version of Ruby and Rails in the link above may be different
+
+ Install the specific versions via:
+ `rbenv install 3.1.1`
+ `gem install rails -v 7.0.2.4`
+
+ The database runs on sqlite3 with seeded data (this is included in the project)
 
 ### Design Progress Overview (Wiki):
 - https://github.com/DECO3500-2022/Lost-At-Sea/blob/main/design-process-overview
@@ -31,13 +31,13 @@ instructions for how to deploy and use your prototype, including any login crede
 - https://github.com/DECO3500-2022/Lost-At-Sea/tree/main/meetings
 
 ### Prototype #1:
-- https://github.com/DECO3500-2022/Lost-At-Sea/tree/main/prototype
+- https://github.com/DECO3500-2022/Lost-At-Sea/tree/main/prototype/low-fedility
 
 ### Prototype #2:
--
+- https://github.com/DECO3500-2022/Lost-At-Sea/tree/main/prototype/med-fedility
 
 ### Prototype #3:
--
+- https://github.com/DECO3500-2022/Lost-At-Sea/tree/main/prototype/high-fedility
 
 ## Team:
 
