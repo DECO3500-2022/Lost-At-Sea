@@ -1,5 +1,8 @@
 # Lost-At-Sea
 
+Welcome to Lost At Sea Wiki!
+Here is a little introduction to our team and what you will find in this Wiki. 
+
 ### Final Prototype URL:
 - http://128.199.80.224:3000/
 
