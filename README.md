@@ -39,11 +39,9 @@ Please find links to documentation created throughout the design project on this
 
 ### Links:
 
-[Background Research](https://github.com/DECO3500-2022/Lost-At-Sea/tree/main/research)
+[Background Research, User Testing and Data Collection](https://github.com/DECO3500-2022/Lost-At-Sea/tree/main/data%20collection)
 
-[User Testing and Data Collection](https://github.com/DECO3500-2022/Lost-At-Sea/tree/main/data%20collection)
-
-[Concept Proposal](https://github.com/DECO3500-2022/Lost-At-Sea/blob/main/Concept%20Proposal.pdf)
+[Concept Proposal](https://github.com/DECO3500-2022/Lost-At-Sea/tree/main/concept%20proposal)
 
 [Meeting Minutes](https://github.com/DECO3500-2022/Lost-At-Sea/tree/main/meetings)
 
