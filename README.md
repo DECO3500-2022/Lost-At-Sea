@@ -1,5 +1,6 @@
 # Lost-At-Sea
-Welcome to Lost At Sea Wiki! Here is a little introduction to our team and what you will find in this Wiki.
+Welcome to Lost At Sea ReadMe Page! Here is a Wiki content list, little introduction to our team,documentation links and prototype installation and instruction.
+If you would like to see our Wiki please follow this [link](https://github.com/DECO3500-2022/Lost-At-Sea/wiki) . If you would also like to see our Wiki summary please follow this [link](https://github.com/DECO3500-2022/Lost-At-Sea/wiki/Wiki-Summary)
 
 ## Wiki Summary: 
 Please see the Wiki page for documentation and follow through each step to understand the Lost At Sea design process.
