@@ -77,6 +77,9 @@ The database runs on sqlite3 with seeded data (this is included in the project)
 8. If a comment is helpful, either reply or reward the person who commented.
 9. To see if you have received any medals or trophies, click the account page button (top right) and check the awards tab.
 
+### Link to Instruction Video:
+[Video Link](https://user-images.githubusercontent.com/70872692/197107362-4116f8f3-0fd4-4e0e-a3fb-28c3b36475ff.mp4)
+
 # ![Poster](https://user-images.githubusercontent.com/71433203/196400895-f07a6971-b32e-4932-946b-079a7d6a4302.png)
 
 # ![Brochure](https://user-images.githubusercontent.com/60338815/197086116-25dc3e35-38af-4d88-9782-adb0fdaca1b1.png)
