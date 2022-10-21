@@ -57,3 +57,6 @@ Studies a double degree program of Computer Science at University of Indonesia a
 Studies Computer Engineering at NTNU, is currently at UQ on exchange. Having worked in teams on big application projects before, I believe I can be an attribute in knowing what needs to be done and when. Other strengths include being organised and efficient, which can help avoid unnecessary work. Weaknesses include not having had a DECO course before, and I am therefore a bit unsure about the scope of the course, what is required and layout of the final prototype. I hope to achieve a better understanding of what technologies can help improve education. I am also hoping to make a prototype that serves its purpose, and can be seen as a functional and good solution to the problem space described.
 
 # ![Poster](https://user-images.githubusercontent.com/71433203/196400895-f07a6971-b32e-4932-946b-079a7d6a4302.png)
+
+# ![Brochure](https://user-images.githubusercontent.com/60338815/197086116-25dc3e35-38af-4d88-9782-adb0fdaca1b1.png)
+
