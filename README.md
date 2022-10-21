@@ -16,6 +16,10 @@ Please see the Wiki page for documentation and follow through each step to under
 8. [Social and Mobile Features](https://github.com/DECO3500-2022/Lost-At-Sea/wiki/8.-Social-and-Mobile-Features)
 9. [Final Reflection](https://github.com/DECO3500-2022/Lost-At-Sea/wiki/9.-Final-Reflection)
 
+[Promotional Material](https://github.com/DECO3500-2022/Lost-At-Sea/wiki/Promotional-Material)
+
+[Reference List](https://github.com/DECO3500-2022/Lost-At-Sea/wiki/References)
+
 ## Team:
 ### James McAuley
 Studies Software Engineering at UQ. I am extremely interested in learning the design thought process and contributing what I can to produce a product for the exhibition. My strengths include working in a software focused professional workplace already and thus having experience with the team based product process. I also have experience with UX design and machine learning code which both have been fleshed out with the recent completion of my thesis. I definitely lack experience with the design thought process and what steps are involved into creating a product from an idea. For work, I usually get given ideas, a plan and a due date to complete the product (or section of code). I hope to achieve a working initial prototype which can be clearly shown in the exhibition for DECO3500. Ideally, this prototype can contribute to my and my team's project portfolios.
