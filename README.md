@@ -1,49 +1,22 @@
 # Lost-At-Sea
+Welcome to Lost At Sea Wiki! Here is a little introduction to our team and what you will find in this Wiki.
 
-Welcome to Lost At Sea Wiki!
-Here is a little introduction to our team and what you will find in this Wiki. 
-
-### Final Prototype URL:
-- http://128.199.80.224:3000/
-
-### Final Prototype Source code
-- https://github.com/DECO3500-2022/Lost-At-Sea/tree/main/prototype/high-fedility
-#### Install
-The link below contains a comprehensive guide of installing Ruby on Rails on different OS
- - https://gorails.com/setup/
-
- However there is one thing to keep in mind, this project runs on Ruby v3.1.1 and Rails v7.0.2.4. The version of Ruby and Rails in the link above may be different
-
- Install the specific versions via:
- `rbenv install 3.1.1`
- `gem install rails -v 7.0.2.4`
-
- The database runs on sqlite3 with seeded data (this is included in the project)
-
-### Design Progress Overview (Wiki):
-- https://github.com/DECO3500-2022/Lost-At-Sea/blob/main/design-process-overview
-
-### Background Research
-- https://github.com/DECO3500-2022/Lost-At-Sea/tree/main/research
-- https://github.com/DECO3500-2022/Lost-At-Sea/tree/main/data%20collection
-
-### Proposal:
-- https://github.com/DECO3500-2022/Lost-At-Sea/blob/main/Concept%20Proposal.pdf
-
-### Meeting Minutes:
-- https://github.com/DECO3500-2022/Lost-At-Sea/tree/main/meetings
-
-### Prototype #1:
-- https://github.com/DECO3500-2022/Lost-At-Sea/tree/main/prototype/low-fedility
-
-### Prototype #2:
-- https://github.com/DECO3500-2022/Lost-At-Sea/tree/main/prototype/med-fedility
-
-### Prototype #3:
-- https://github.com/DECO3500-2022/Lost-At-Sea/tree/main/prototype/high-fedility
+## Wiki Summary: 
+Please see the Wiki page for documentation and follow through each step to understand the Lost At Sea design process.
+1. [Concept Proposal Summary](https://github.com/DECO3500-2022/Lost-At-Sea/wiki/1.-Concept-Proposal-Summary)
+3. [Background Research](https://github.com/DECO3500-2022/Lost-At-Sea/wiki/2.-Background-Research)
+2. [Design Process Overview](https://github.com/DECO3500-2022/Lost-At-Sea/wiki/3.-Design-Process-Overview)
+4. [Prototype](https://github.com/DECO3500-2022/Lost-At-Sea/wiki/4.-Prototypes)
++ 4.1 [Low-Fidelity Prototype](https://github.com/DECO3500-2022/Lost-At-Sea/wiki/4.1-Low-Fidelity-Prototype)
++ 4.2 [Medium-Fidelity Prototype](https://github.com/DECO3500-2022/Lost-At-Sea/wiki/4.2-Medium-Fidelity-Prototype)
++ 4.3 [High-Fidelity Prototype](https://github.com/DECO3500-2022/Lost-At-Sea/wiki/4.3-High-Fidelity-Prototype)
+5. [User Research and Feedback](https://github.com/DECO3500-2022/Lost-At-Sea/wiki/5.-User-Testing,-Research-and-Feedback)
+6. [Stand Up 1: Week 8](https://github.com/DECO3500-2022/Lost-At-Sea/wiki/6.-Stand-Up-1:-Week-8)
+7. [Stand Up 2: Week 10](https://github.com/DECO3500-2022/Lost-At-Sea/wiki/7.-Stand-Up-2:-Week-10)
+8. [Social and Mobile Features](https://github.com/DECO3500-2022/Lost-At-Sea/wiki/8.-Social-and-Mobile-Features)
+9. [Final Reflection](https://github.com/DECO3500-2022/Lost-At-Sea/wiki/9.-Final-Reflection)
 
 ## Team:
-
 ### James McAuley
 Studies Software Engineering at UQ. I am extremely interested in learning the design thought process and contributing what I can to produce a product for the exhibition. My strengths include working in a software focused professional workplace already and thus having experience with the team based product process. I also have experience with UX design and machine learning code which both have been fleshed out with the recent completion of my thesis. I definitely lack experience with the design thought process and what steps are involved into creating a product from an idea. For work, I usually get given ideas, a plan and a due date to complete the product (or section of code). I hope to achieve a working initial prototype which can be clearly shown in the exhibition for DECO3500. Ideally, this prototype can contribute to my and my team's project portfolios.
 
@@ -55,6 +28,52 @@ Studies a double degree program of Computer Science at University of Indonesia a
 
 ### Ida Green Heglund
 Studies Computer Engineering at NTNU, is currently at UQ on exchange. Having worked in teams on big application projects before, I believe I can be an attribute in knowing what needs to be done and when. Other strengths include being organised and efficient, which can help avoid unnecessary work. Weaknesses include not having had a DECO course before, and I am therefore a bit unsure about the scope of the course, what is required and layout of the final prototype. I hope to achieve a better understanding of what technologies can help improve education. I am also hoping to make a prototype that serves its purpose, and can be seen as a functional and good solution to the problem space described.
+
+
+## Documentation Links:
+Please find links to documentation created throughout the design project on this page.
+
+### Links:
+
+[Background Research](https://github.com/DECO3500-2022/Lost-At-Sea/tree/main/research)
+
+[User Testing and Data Collection](https://github.com/DECO3500-2022/Lost-At-Sea/tree/main/data%20collection)
+
+[Concept Proposal](https://github.com/DECO3500-2022/Lost-At-Sea/blob/main/Concept%20Proposal.pdf)
+
+[Meeting Minutes](https://github.com/DECO3500-2022/Lost-At-Sea/tree/main/meetings)
+
+[Low-Fedility Prototype](https://github.com/DECO3500-2022/Lost-At-Sea/tree/main/prototype/low-fedility)
+
+[Medium-Fidelity Prototype](https://github.com/DECO3500-2022/Lost-At-Sea/tree/main/prototype/med-fedility)
+
+[High-Fidelity Prototype](https://github.com/DECO3500-2022/Lost-At-Sea/tree/main/prototype/high-fedility)
+
+[Final Prototype URL](http://128.199.80.224:3000/)
+
+[Final Prototype Source Code](https://github.com/DECO3500-2022/Lost-At-Sea/tree/main/prototype/high-fedility)
+
+### Installation Process:
+The link below contains a comprehensive guide of installing Ruby on Rails on different OS
+
+https://gorails.com/setup/
+
+However there is one thing to keep in mind, this project runs on Ruby v3.1.1 and Rails v7.0.2.4. The version of Ruby and Rails in the link above may be different
+
+Install the specific versions via: rbenv install 3.1.1 gem install rails -v 7.0.2.4
+
+The database runs on sqlite3 with seeded data (this is included in the project)
+
+### Instructions (if needed):
+1. Click the register button (top right) and details.
+2. See the home page and helpful tutorial.
+3. Click the course page button (top right) and enrol in a course.
+4. Click the name of the enrolled course to see the course content page.
+5. To complete exercises, click a highlighted topic.
+6. You will automatically join a voice channel, this can be turned off by clicking the microphone button.
+7. Complete the exercise with the online compiler, feel free to ask or answer any comments at the bottom of the exercise page.
+8. If a comment is helpful, either reply or reward the person who commented.
+9. To see if you have received any medals or trophies, click the account page button (top right) and check the awards tab.
 
 # ![Poster](https://user-images.githubusercontent.com/71433203/196400895-f07a6971-b32e-4932-946b-079a7d6a4302.png)
 
